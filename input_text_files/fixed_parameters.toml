@@ -1,0 +1,56 @@
+
+[conversion_parameters]
+H2_scf_to_lb = 0.005204 # lb/scf
+H2_lb_to_scf = 192.1598770177 # scf/lb
+H2_scf_to_Nm3 = 0.0267901889997876 # Nm3/scf
+bbl_to_m3 = 0.1590 # m3/bbl
+BPCD_to_m3_per_hr = 0.006622
+H2_Nm3_to_lb = 0.198
+lb_to_g = 453.592 # gram/lb
+bbl_to_gallon = 42 # gal/bbl
+naphtha_ton_to_bbl = 8.9 # bbl/ton
+H2_kg_to_scf = 423.36 # scf/kg
+lb_to_kg = 0.453592 # kg/lb
+L_to_gal = 0.264172
+ft_to_m = 0.3048
+lb_to_ton = 0.000453592
+NG_lb_to_MMBtu = 0.02432
+
+[molecular_weight]
+S = 32.06 # g/mol
+N = 14.01 # g/mol
+H2S = 34.08 # g/mol
+H2 = 2.02 # g/mol
+CH4 = 16.04
+C2H6 = 30.069
+C3H8 = 44.097
+H = 1.01
+NH3 = 17.03
+MEA = 61.1 # g/mol
+H2O = 18.015 # g/mol
+O2 = 31.998
+
+[price]
+butanes_and_lighter = 56
+gasoline = 86
+jet = 89
+diesel = 84
+fuel_oil = 62
+
+[density] # kg/L
+aromatics = 0.87138095
+alkanes = 0.796678153
+
+[specific_energy] # HHV MJ/kg
+butane = 49.1                       # https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html
+naphtha = 48.1                      # https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html
+kerosene = 46.20                    # https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html
+gas_oil = 43.30                     # https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html
+residual_fuel_oil = 39.50           # https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html
+CH4 = 55.38                         # methane - https://www.engineeringtoolbox.com/heating-values-fuel-gases-d_823.html
+C2H6 = 51.63                        # ethane - https://www.engineeringtoolbox.com/heating-values-fuel-gases-d_823.html
+C3H8 = 50.16                        # propane - https://www.engineeringtoolbox.com/heating-values-fuel-gases-d_823.html
+aromatics = 41.62942635             # avg aromatics specific energy https://www.energy.gov/sites/prod/files/2020/09/f78/beto-sust-aviation-fuel-sep-2020.pdf     
+alkanes = 43.95228882               # avg aromatics specific energy https://www.energy.gov/sites/prod/files/2020/09/f78/beto-sust-aviation-fuel-sep-2020.pdf     
+sulfur = 9.216                      # https://www.engineeringtoolbox.com/fuels-higher-calorific-values-d_169.html
+crude = 44                          

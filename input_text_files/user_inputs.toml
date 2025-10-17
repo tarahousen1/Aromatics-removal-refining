@@ -1,0 +1,274 @@
+
+[Refinery]
+input_bpcd = 300000         # bpcd
+aromatics_removal_technique = 'solvent_extraction' # Select hydrotreatment or solvent_extraction
+refinery_type = 'cracking'
+crude_oil = 'murban'
+hydrogen_source = 'SMR'
+cost_allocation_method = 'market value allocation'
+electricity_choice = 'grid'
+lifetime = 20
+
+[hydrotreatment_operating_parameters]
+reactor_temp = 340          # C
+reactor_pressure = 50       # bar
+LHSV = 1                    # hr^-1
+gas_to_oil = 400            # mL/mL (Nm3/Nm3)
+H_purity = 90
+
+[solvent_extraction_parameters]
+solvent_choice = 'sulfolane' # Select sulfolane or acetonitrile
+solvent_to_feed_ratio = [3, 7]
+
+[North_Slope_Alaska_crude_oil_properties]
+crude_sulfur_perc = 0.99                        # Gary and Handwerk: 0.99, PRELIM: 0.85%
+API = 26.4                                      # Gary and Handwerk: 26.4, PRELIM: 31.4
+wppm_N_crude = 908.14                           # Source: PRELIM
+
+[North_Slope_Alaska_crude_data_cuts]
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "C2"
+vol_percent = 0.1
+sp_gr = 0.374
+low_temp = 'None'
+high_temp = 'None'
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "C3"
+vol_percent = 0.4
+sp_gr = 0.509
+low_temp = 'None'
+high_temp = 'None'
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "iC4"
+vol_percent = 0.6
+sp_gr = 0.564
+low_temp = 'None'
+high_temp = 'None'
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "nC4"
+vol_percent = 2.4
+sp_gr = 0.584
+low_temp = 'None'
+high_temp = 'None'
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "iC5"
+vol_percent = 1.7
+sp_gr = 0.625
+low_temp = 'None'
+high_temp = 'None'
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "nC5"
+vol_percent = 2.4
+sp_gr = 0.631
+low_temp = 0
+high_temp = 97
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "97–178"
+vol_percent = 4.1
+sp_gr = 0.697
+low_temp = 97
+high_temp = 178
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "178–214"
+vol_percent = 6.2
+sp_gr = 0.740
+low_temp = 178
+high_temp = 214
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "214–242"
+vol_percent = 8.2
+sp_gr = 0.759
+low_temp = 214
+high_temp = 242
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "242–270"
+vol_percent = 10.2
+sp_gr = 0.764
+low_temp = 242
+high_temp = 270
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "270–296"
+vol_percent = 12.2
+sp_gr = 0.781
+low_temp = 270
+high_temp = 296
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "296–313"
+vol_percent = 13.2
+sp_gr = 0.781
+low_temp = 296
+high_temp = 313
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "313–342"
+vol_percent = 15.2
+sp_gr = 0.791
+low_temp = 313
+high_temp = 342
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "342–366"
+vol_percent = 17.1
+sp_gr = 0.797
+low_temp = 342
+high_temp = 366
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "366–395"
+vol_percent = 19.1
+sp_gr = 0.806
+low_temp = 366
+high_temp = 395
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "395–415"
+vol_percent = 21.1
+sp_gr = 0.831
+low_temp = 395
+high_temp = 415
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "415–438"
+vol_percent = 23.1
+sp_gr = 0.832
+low_temp = 415
+high_temp = 438
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "438–461"
+vol_percent = 25.1
+sp_gr = 0.839
+low_temp = 438
+high_temp = 461
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "461–479"
+vol_percent = 27.1
+sp_gr = 0.848
+low_temp = 461
+high_temp = 479
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "479–501"
+vol_percent = 29.1
+sp_gr = 0.856
+low_temp = 479
+high_temp = 501
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "501–518"
+vol_percent = 31.1
+sp_gr = 0.860
+low_temp = 501
+high_temp = 518
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "518–538"
+vol_percent = 33.1
+sp_gr = 0.864
+low_temp = 518
+high_temp = 538
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "538–557"
+vol_percent = 35.1
+sp_gr = 0.867
+low_temp = 538
+high_temp = 557
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "557–578"
+vol_percent = 37.1
+sp_gr = 0.868
+low_temp = 557
+high_temp = 578
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "578–594"
+vol_percent = 39.2
+sp_gr = 0.872
+low_temp = 578
+high_temp = 594
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "594–610"
+vol_percent = 41.2
+sp_gr = 0.878
+low_temp = 594
+high_temp = 610
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "610–632"
+vol_percent = 43.2
+sp_gr = 0.887
+low_temp = 610
+high_temp = 632
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "632–650"
+vol_percent = 45.0
+sp_gr = 0.893
+low_temp = 632
+high_temp = 650
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "650–1000"
+vol_percent = 76.8
+sp_gr = 0.933
+low_temp = 650
+high_temp = 1000
+
+[[North_Slope_Alaska_crude_data_cuts.cut]]
+name = "1000+"
+vol_percent = 100.0
+sp_gr = 0.995
+low_temp = 1000
+high_temp = 1200
+
+[North_Slope_Alaska_crude_data_H2_content]
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 176.0
+hydrogen_wt_percent = 16.24
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 352.4
+hydrogen_wt_percent = 14.37
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 548.6
+hydrogen_wt_percent = 13.30
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 647.6
+hydrogen_wt_percent = 12.94
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 750.2
+hydrogen_wt_percent = 12.72
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 842.0
+hydrogen_wt_percent = 12.41
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 973.4
+hydrogen_wt_percent = 11.91
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 973.4
+hydrogen_wt_percent = 11.34
+
+[[North_Slope_Alaska_crude_data_H2_content.hydrogen_by_temp_f]]
+temp_f = 750.2
+hydrogen_wt_percent = 11.61

@@ -1,0 +1,35 @@
+
+[sulfolane_solvent_extraction] # Separation of Cracked Kerosene by Liquid-liquid Extraction Habaki et al
+density = 1.27                         # kg/L
+
+mass_purity_nonaromatics = 0.995
+recovery_ratio_aromatics = 0.98
+
+extractor_num_stages = 20
+stripper_num_stages = 16
+solvent_regenerator_num_stages = 13
+washer_num_stages = 10 # ?????????????????????????????????????
+tray_efficiency = 0.85
+
+
+LLE_residence_time = 0.5    # hr https://portfolio-pplus.com/TechnologyTypes/Details/139
+
+
+[acetonitrile_solvent_extraction]   # Brijmohan Identication and Screening of Potential Organic Solvents for the Liquid−Liquid Extraction
+density = 0.786  # kg/L
+solvent_to_feed_ratio = 4.29
+
+raffinate_yield = 0.922
+extract_yield = 0.078
+
+aromatics_extraction_eff = 0.452727143
+monoaromatics_extraction_eff = 0.429
+polyaromatics_extraction_eff = 0.781
+
+extractor_num_stages = 5
+solvent_regenerator_num_stages = 20
+
+washer_num_trays = 8        # ASSUME SULFOLANE
+
+partition_coeff = 9.047109208
+LLE_residence_time = 0.5    # hr https://portfolio-pplus.com/TechnologyTypes/Details/139

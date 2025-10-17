@@ -1,0 +1,21 @@
+
+[Distillation] # kg material for crude feed 150,000 BPD
+carbon_steel = 5200000      # general plant
+alloy_steel = 895000        # general plant
+stainless_steel = 325000    # general plant
+copper = 30048              # 20000 general plant and 10048 kg transformer
+copper_wire = 5400          # general plant
+aluminum = 73867            # 70000 general plant and 3867 kg transformer
+steel = 4965                # transformer
+polymers = 22531            # transformer
+
+
+[Hydrotreatment] # kg material for feed 20,000 BPD
+NiMo_Al2_O3 = 1806000       # catalyst
+carbon_steel = 465000       # general plant
+alloy_steel = 37000         # general plant
+copper = 25958              # 25000 kg general plant and 958 kg transformer
+copper_wire = 1120          # general plant
+steel = 728.33              # transformer
+aluminum = 3009             # transformer
+polymers = 6728             # transformer
