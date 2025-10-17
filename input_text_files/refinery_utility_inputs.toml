@@ -1,0 +1,59 @@
+
+[desalter_utility_data] # per bbl feed
+power = { amount = [0.01, 0.02], unit = "kWh" }
+water_injection = { amount = [1,3], unit = "gal" }
+demulsifier_chemical = { amount = [0.005, 0.01], unit = "lb" }
+caustic = { amount = [0.001, 0.003], unit = "lb" }
+
+[atmospheric_distillation_utility_data] # per bbl feed
+steam = { amount = 10, unit = "lb" } 
+power = { amount = 0.9, unit = "kWh" }
+cooling_water_crclt = { amount = 150, unit = "gal" }
+#fuel = { amount = 0.0645, unit = "MMBtu" } # Including 0.0145 MMBtu to produce 10 lb steam
+
+[vacuum_distillation_utility_data] # per bbl feed
+steam = { amount = 10, unit = "lb" } 
+power = { amount = 0.3, unit = "kWh" }
+cooling_water_crclt = { amount = 150, unit = "gal" }
+#fuel = { amount = 0.0445, unit = "MMBtu" } # Including 0.0145 MMBtu to produce 10 lb steam
+
+[hydrotreatment_utility_data]  # per bbl feed
+steam = { amount = [6, 10], unit = "lb" } 
+power = { amount = [2, 6], unit = "kWh" }
+cooling_water_crclt = { amount = [300, 500], unit = "gal" }
+#fuel = { amount = [0.10875, 0.2145], unit = "MMBtu" }  # Including 0.00875 - 0.0145 MMBtu to produce 6 - 10 lb steam
+catalyst_replacement = { amount = [0.000454, 0.000771], unit = "kg" } 
+
+[amine_gas_treating_utility_data] # per gallon solution circulated
+power = { amount = 0.01, unit = "kWh" }
+cooling_water_crclt = { amount = 4.4, unit = "gal" }
+fuel = { amount = 0.001, unit = "MMBtu" }
+
+[claus_sulfur_recovery_utility_data] # per long ton sulfur
+power = { amount = 100, unit = "kWh" }
+boiler_feed_water = { amount = 820, unit = "gal" }
+waste_heat_steam = { amount = 6500, unit = "lb" }
+
+[SCOT_utility_data] # per long ton sulfur
+fuel =  { amount = 0.001, unit = "MMBtu" }
+power = { amount = 0.01, unit = "kWh" }
+cooling_water_crclt = { amount = 4.4, unit = "gal" }
+amine = { amount = 2.5, unit = "lb" }
+
+[SMR_utility_data] # per lb H2
+fuel =  { amount = 0.045 , unit = "MMBtu" }
+power = { amount = 0.15, unit = "kWh" }
+cooling_water_crclt = { amount = 65, unit = "gal" }
+boiler_feed_water = { amount = 1, unit = "gal" }
+catalyst_chemicals = { amount = 0.80, unit = "cent" }
+feed_gas = { amount = 0.0503424, unit = "MMBtu" } # 0.26 mol CH4 per mol H2
+
+[electrolyzer_utility_data] # per lb H2
+power = { amount = 22.68, unit = "kWh" }
+feed_water = { amount = 8.93, unit = "lb" }
+
+[sulfolane_utility_data] # per metric ton of feed Meyers
+fuel =  { amount = [278, 1918] , unit = "MMBtu" } 
+power = { amount = [5.6, 6.552], unit = "kWh" }
+#fuel =  { amount = [1.065, 2.795] , unit = "MMBtu" } # To produce 278 - 1,918 lb steam
+cooling_water_crclt = { amount = [638, 9510], unit = "gal" }

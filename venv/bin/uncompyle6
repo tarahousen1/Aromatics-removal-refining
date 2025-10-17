@@ -1,0 +1,7 @@
+#!/Users/tarahousen/Documents/Aromatics_removal_desulfurization_refining/venv/bin/python3.12
+import sys
+from uncompyle6.bin.uncompile import main_bin
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main_bin())

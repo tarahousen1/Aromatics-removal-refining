@@ -1,0 +1,35 @@
+
+
+# LCA DATA
+
+
+[variable_input_emissions]
+grid = 0.470                                   # kgCO2eq/kWh GREET 2023 grid electricity US mix
+solar = 0.040                                  # kgCO2eq/kWh GREET 2023 solar electricity     
+wind = 0.010                                   # kgCO2eq/kWh GREET 2023 wind electricity     
+NG = 72.98549                                  # kgCO2eq/MMBtu GREET 2023 NG burned in industrial boiler
+SMR_with_CCS = 3.7                             # kgCO2eq/kg 93% CCS https://www.iea.org/data-and-statistics/charts/comparison-of-the-emissions-intensity-of-different-hydrogen-production-routes-2021
+SMR_without_CCS = 11.4                         # kgCO2eq/kg without CCS https://www.iea.org/data-and-statistics/charts/comparison-of-the-emissions-intensity-of-different-hydrogen-production-routes-2021
+refrigeration = 0
+cooling_water = 0
+feed_water = 0
+boiler_feed_water = 0
+
+[raw_material_emissions]
+NiMo_Al2_O3_production = 4.297956          # kgCO2eq/kg catalyst GREET
+NiMo_Al2_O3_spent = 2.721331               # kgCO2eq/kg catalyst GREET
+
+[materials] # gCO2e/kg material
+NiMo_Al2_O3 = 4297.956          # kgCO2eq/ton catalyst GREET
+carbon_steel =  2451.94 
+alloy_steel =  2451.94 
+stainless_steel = 901
+copper = 4215.77
+copper_wire = 4215.77
+aluminum = 9290.6
+steel = 2451.94 
+polymers = 8053.6
+
+[emissions]
+upstream_crude_oil_prod_trans = 7.90                # gCO2e/MJ crude
+jet_fuel_combustion = 73.8                          # gCO2e/MJ jet

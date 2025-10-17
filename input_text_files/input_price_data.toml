@@ -1,0 +1,66 @@
+
+
+# INPUT PRICE DATA
+
+[crude_oil_price] # https://oilprice.com/oil-price-charts/#prices
+basrah-heavy = 65.83 # Spot price
+oman-export = 69.00 # Spot price from Capital IQ
+brent = 66.89 # Spot price from Capital IQ
+murban = 69.41 # ICE https://www.ice.com/products/75443578/Murban-Crude-Oil-Futures/data?marketId=6765768&span=2
+mars = 71.18 
+
+[refinery_petroleum_product_prices]
+naphtha = 83 # $/bbl
+light_gas_oil = 79 # $/bbl 
+heavy_gas_oil = 75 # $/bbl 
+vacuum_gas_oil = 73 # $/bbl 
+residues = 55 # $/bbl 
+
+[refinery_petroleum_product_prices_multiplier]
+SR_light_naphtha = 1.38 #
+SR_heavy_naphtha = 1.38 # 
+light_gas_oil = 1.317
+heavy_gas_oil = 1.25
+residues = 0.917
+light_vacuum_gas_oil = 1.217
+heavy_vacuum_gas_oil = 1.217
+
+[refinery_petroleum_product_spot_prices]
+propane = 0.66 # $/gal # https://www.eia.gov/todayinenergy/prices.php
+sulfur = 0.17 # $/kg # https://businessanalytiq.com/procurementanalytics/index/sulfur-price-index/
+benzene = 0.3154 # $/gal
+toluene = 0.404 # $/gal
+xylene = 0.419 # $/gal
+#BTX = 2.982 # $/gal # https://grains.org/wp-content/uploads/2025/01/Ethanol-Market-and-Pricing-Report-01222025.pdf
+
+[variable_input_prices]
+# Electricity ($/kWh)
+grid = 0.117                                  # Fixed electricity price
+solar = 0.049                                  # Fixed electricity price for solar globally 2022 (https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/Aug/IRENA_Renewable_power_generation_costs_in_2022.pdf)
+wind = 0.033                                   # Fixed electricity price for onshore wind globally 2022 (https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/Aug/IRENA_Renewable_power_generation_costs_in_2022.pdf)
+future_grid = 0.105                           # Fixed electricity price 2050 (https://www.eia.gov/outlooks/aeo/data/browser/#/?id=8-AEO2023&cases=ref2023&sourcekey=0)
+future_solar = 0.032                           # Fixed electricity price for solar globally 2050 (https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Nov/IRENA_Future_of_Solar_PV_2019.pdf)
+future_wind = 0.025                            # Fixed electricity price for onshore wind globally 2050 (https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2019/Oct/IRENA_Future_of_wind_2019_summ_EN.pdf?la=en&hash=D07089441987EBABC7F4BED63B62C83820C18724#:~:text=COSTS%20OF%20WIND%20POWER.&text=Globally%2C%20the%20LCOE%20for%20onshore,to%200.03%2FkWh%20by%202050.)
+
+# Natural Gas ($/MMBtu)
+NG = 2.19                            # Fixed NG price
+feed_gas = 0.047                     # $/lb Fixed NG price
+
+# Hydrogen ($/scf H2)
+electrolysis_renewable_electricity = 0.01386            # Fixed price for hydrogen from electrolysis (renewable electricity) (https://www.iea.org/data-and-statistics/charts/global-average-levelised-cost-of-hydrogen-production-by-energy-source-and-technology-2019-and-2050)
+future_electrolysis_renewable_electricity = 0.00585     # ($/scf H2) Fixed price for hydrogen from electrolysis (renewable electricity) (https://www.iea.org/data-and-statistics/charts/global-average-levelised-cost-of-hydrogen-production-by-energy-source-and-technology-2019-and-2050)
+
+# Steam ($/lb)
+steam = 0.00275                                         # Fixed steam price https://www.energy.gov/sites/prod/files/2014/05/f15/tech_brief_true_cost.pdf
+
+# Cooling water ($/gallon)
+cooling_water = 0.0000757                               # Fixed price for cooling water (Pearlson)
+
+# Feed water
+boiler_feed_water = 0.005 # ($/gal)
+feed_water = 0.0006 # ($/lb)
+
+[raw_material_prices]
+NiMo_Al2_O3 = 61.73 # $/kg Alibaba
+sulfolane = 2400 # $/ton https://pubs.acs.org/doi/10.1021/acs.oprd.1c00106?fig=fig14&ref=pdf
+acetonitrile = 3050 # $/metric ton # https://www.chemanalyst.com/Pricing-data/acetonitrile-1105

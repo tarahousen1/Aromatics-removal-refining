@@ -1,0 +1,24 @@
+[HDS]                           # Mapiour et al
+power_law_param = [{ E = 101, n = 2.68}] 
+multi_param = [{ k0 = 3.53e10 , s = 1.42e4, m = 0.98, q = -0.31, c = 2.72  }] 
+
+
+[HDN]                           # Mapiour et al
+E = 79                          # Activation energy (kJ/mol)
+n_power_law = 2.02              # Reacion order
+k0_multi_param = 8.03e8         # Arrhenius constant
+s = 1.35e4                      # s = E/R
+m = 1.82                        # Emperical regression factor
+q = -0.22                       # Emperical regression factor
+c = 2.04                        # Emperical regression factor
+
+[HDA_360_380]                   # Mapiour et al
+power_law_param = [{ E = 30, n = 1.5}] 
+LH_param = 
+multi_param = [{ E = 30, k0 = 1.63e2,  n = 1.0, s = 4.08e3, m = 0.47, q = -0.01, c = 0.24 }] 
+
+[HDA_380_400]                   # Mapiour et al
+power_law_param = [{ E = -18, n = 1.5}] 
+LH_param =
+
+params['k'], params['Ki'], params['KH2'], params['KH2S']
